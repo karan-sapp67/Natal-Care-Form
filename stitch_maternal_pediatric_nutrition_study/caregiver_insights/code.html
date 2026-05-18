@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mother Awareness - IMPN Study</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#d2bbff",
+                        "surface-container": "#e6eeff",
+                        "primary-container": "#4a1d96",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#b794ff",
+                        "on-secondary-container": "#6a5a7e",
+                        "surface-tint": "#6d46bb",
+                        "tertiary-container": "#00453c",
+                        "secondary": "#67587b",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary": "#002d27",
+                        "tertiary-fixed-dim": "#7ad7c6",
+                        "on-tertiary-fixed": "#00201b",
+                        "on-tertiary-fixed-variant": "#005046",
+                        "tertiary-fixed": "#96f3e1",
+                        "inverse-surface": "#27313f",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-container": "#59b7a6",
+                        "surface": "#f8f9ff",
+                        "primary": "#320075",
+                        "surface-dim": "#d0dbed",
+                        "on-primary-fixed-variant": "#552ba1",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-background": "#121c2a",
+                        "secondary-fixed-dim": "#d2bfe8",
+                        "surface-container-high": "#dee9fc",
+                        "on-surface": "#121c2a",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#e9d5ff",
+                        "primary-fixed": "#eaddff",
+                        "on-secondary-fixed": "#221534",
+                        "outline-variant": "#ccc3d4",
+                        "secondary-fixed": "#eddcff",
+                        "on-secondary-fixed-variant": "#4f4062",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#25005a",
+                        "inverse-primary": "#d2bbff",
+                        "surface-container-highest": "#d9e3f6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#d9e3f6",
+                        "outline": "#7b7484",
+                        "background": "#f8f9ff",
+                        "on-surface-variant": "#4a4452"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-margin": "48px",
+                        "gutter": "16px",
+                        "card-gap": "20px",
+                        "container-padding": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "interactive": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "interactive": ["16px", { "lineHeight": "20px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 8px 30px rgba(50, 0, 117, 0.04);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface sticky top-0 z-50 flex justify-between items-center w-full px-gutter h-16 border-b border-outline-variant/10 shadow-sm shadow-primary/5">
+<button class="text-primary hover:bg-surface-container-high transition-colors p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-headline-md font-headline-md font-bold text-primary">IMPN Study</h1>
+<button class="text-primary hover:bg-surface-container-high transition-colors p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">help</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-[720px] mx-auto px-container-padding pt-6 pb-[120px] flex flex-col gap-section-margin">
+<!-- Progress Bar -->
+<div class="w-full flex flex-col gap-2">
+<div class="flex justify-between items-center px-1">
+<span class="text-label-caps font-label-caps text-on-surface-variant uppercase">Phase 2: Insights</span>
+<span class="text-label-caps font-label-caps text-primary uppercase">40%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-on-tertiary-container rounded-full w-[40%] transition-all duration-500 ease-in-out"></div>
+</div>
+</div>
+<!-- Question 1: Single Choice -->
+<section class="flex flex-col gap-6">
+<h2 class="text-headline-md font-headline-md text-on-background">When your child needs nutritional support, where do you look first?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-card-gap">
+<!-- Option 1: Selected State -->
+<label class="group relative flex items-center p-6 bg-secondary-container/30 border-2 border-primary rounded-xl cursor-pointer soft-shadow transition-all">
+<input checked="" class="sr-only" name="source" type="radio"/>
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined icon-fill">medical_services</span>
+</div>
+<span class="text-body-lg font-body-lg font-medium text-on-background flex-grow">Doctor consultation</span>
+<div class="w-6 h-6 rounded-full border-2 border-primary flex items-center justify-center bg-primary">
+<div class="w-2 h-2 rounded-full bg-surface-container-lowest"></div>
+</div>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest border border-outline-variant/30 rounded-xl cursor-pointer soft-shadow hover:bg-surface-container-low transition-all hover:border-outline-variant">
+<input class="sr-only" name="source" type="radio"/>
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">home_health</span>
+</div>
+<span class="text-body-lg font-body-lg text-on-surface-variant group-hover:text-on-background transition-colors flex-grow">Home remedies/Elder advice</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center"></div>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest border border-outline-variant/30 rounded-xl cursor-pointer soft-shadow hover:bg-surface-container-low transition-all hover:border-outline-variant">
+<input class="sr-only" name="source" type="radio"/>
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">travel_explore</span>
+</div>
+<span class="text-body-lg font-body-lg text-on-surface-variant group-hover:text-on-background transition-colors flex-grow">Online research/Social Media</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center"></div>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest border border-outline-variant/30 rounded-xl cursor-pointer soft-shadow hover:bg-surface-container-low transition-all hover:border-outline-variant">
+<input class="sr-only" name="source" type="radio"/>
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">local_pharmacy</span>
+</div>
+<span class="text-body-lg font-body-lg text-on-surface-variant group-hover:text-on-background transition-colors flex-grow">Pharmacy suggestion</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Question 2: Multiple Choice -->
+<section class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<h2 class="text-headline-md font-headline-md text-on-background">What are your biggest concerns with existing supplements?</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">(Select all that apply)</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-card-gap">
+<!-- Option A -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest border border-outline-variant/30 rounded-xl cursor-pointer soft-shadow hover:bg-surface-container-low transition-all hover:border-outline-variant">
+<input class="sr-only" type="checkbox"/>
+<div class="flex items-center gap-4 w-full">
+<div class="w-6 h-6 rounded border-2 border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors"></div>
+<span class="text-body-lg font-body-lg text-on-surface-variant group-hover:text-on-background transition-colors flex-grow">Taste/Flavor</span>
+</div>
+</label>
+<!-- Option B -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest border border-outline-variant/30 rounded-xl cursor-pointer soft-shadow hover:bg-surface-container-low transition-all hover:border-outline-variant">
+<input class="sr-only" type="checkbox"/>
+<div class="flex items-center gap-4 w-full">
+<div class="w-6 h-6 rounded border-2 border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors"></div>
+<span class="text-body-lg font-body-lg text-on-surface-variant group-hover:text-on-background transition-colors flex-grow">Digestive discomfort (nausea/constipation)</span>
+</div>
+</label>
+<!-- Option C -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest border border-outline-variant/30 rounded-xl cursor-pointer soft-shadow hover:bg-surface-container-low transition-all hover:border-outline-variant">
+<input class="sr-only" type="checkbox"/>
+<div class="flex items-center gap-4 w-full">
+<div class="w-6 h-6 rounded border-2 border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors"></div>
+<span class="text-body-lg font-body-lg text-on-surface-variant group-hover:text-on-background transition-colors flex-grow">Cost</span>
+</div>
+</label>
+<!-- Option D: Selected State Example -->
+<label class="group relative flex items-center p-6 bg-secondary-container/10 border border-primary/50 rounded-xl cursor-pointer soft-shadow transition-all">
+<input checked="" class="sr-only" type="checkbox"/>
+<div class="flex items-center gap-4 w-full">
+<div class="w-6 h-6 rounded border-2 border-primary bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="text-body-lg font-body-lg font-medium text-on-background flex-grow">Sugar content</span>
+</div>
+</label>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 gap-4 bg-surface/80 backdrop-blur-md border-t border-outline-variant/10 shadow-[0_-8px_30px_rgba(50,0,117,0.04)]">
+<button class="flex items-center justify-center text-primary border border-primary/20 h-14 px-8 rounded-full hover:bg-surface-container-high transition-colors font-interactive text-interactive">
+<span class="material-symbols-outlined mr-2">chevron_left</span>
+            Back
+        </button>
+<button class="flex items-center justify-center bg-primary text-on-primary h-14 px-8 rounded-full shadow-md hover:brightness-110 transition-all font-interactive text-interactive ml-auto">
+            Continue
+            <span class="material-symbols-outlined ml-2">chevron_right</span>
+</button>
+</nav>
+</body></html>

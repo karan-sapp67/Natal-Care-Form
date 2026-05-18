@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPN Study - Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#d2bbff",
+                        "surface-container": "#e6eeff",
+                        "primary-container": "#4a1d96",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#b794ff",
+                        "on-secondary-container": "#6a5a7e",
+                        "surface-tint": "#6d46bb",
+                        "tertiary-container": "#00453c",
+                        "secondary": "#67587b",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary": "#002d27",
+                        "tertiary-fixed-dim": "#7ad7c6",
+                        "on-tertiary-fixed": "#00201b",
+                        "on-tertiary-fixed-variant": "#005046",
+                        "tertiary-fixed": "#96f3e1",
+                        "inverse-surface": "#27313f",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-container": "#59b7a6",
+                        "surface": "#f8f9ff",
+                        "primary": "#320075",
+                        "surface-dim": "#d0dbed",
+                        "on-primary-fixed-variant": "#552ba1",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-background": "#121c2a",
+                        "secondary-fixed-dim": "#d2bfe8",
+                        "surface-container-high": "#dee9fc",
+                        "on-surface": "#121c2a",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#e9d5ff",
+                        "primary-fixed": "#eaddff",
+                        "on-secondary-fixed": "#221534",
+                        "outline-variant": "#ccc3d4",
+                        "secondary-fixed": "#eddcff",
+                        "on-secondary-fixed-variant": "#4f4062",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#25005a",
+                        "inverse-primary": "#d2bbff",
+                        "surface-container-highest": "#d9e3f6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#d9e3f6",
+                        "outline": "#7b7484",
+                        "background": "#f8f9ff",
+                        "on-surface-variant": "#4a4452"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-margin": "48px",
+                        "gutter": "16px",
+                        "card-gap": "20px",
+                        "container-padding": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "interactive": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "interactive": ["16px", { "lineHeight": "20px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen flex flex-col font-body-md text-body-md text-on-surface antialiased">
+<!-- TopAppBar (Transactional - hidden as it's a splash screen intent, but requested as welcome so keeping simple header) -->
+<header class="bg-surface border-b border-outline-variant/10 shadow-sm shadow-primary/5 flex justify-between items-center w-full px-gutter h-16 sticky top-0 z-40">
+<div class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-container-high transition-colors p-2 rounded-full cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<div class="text-headline-md font-headline-md font-bold text-primary">IMPN Study</div>
+<div class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-container-high transition-colors p-2 rounded-full cursor-pointer">
+<span class="material-symbols-outlined">help</span>
+</div>
+</header>
+<!-- Progress Bar (0%) -->
+<div class="w-full bg-surface-container-highest h-1">
+<div class="bg-tertiary h-1 w-[2%] rounded-r-full transition-all duration-500"></div>
+</div>
+<main class="flex-grow flex flex-col items-center justify-center p-container-padding pb-32 max-w-[720px] mx-auto w-full">
+<div class="w-full max-w-xl text-center mb-section-margin">
+<h1 class="text-display-lg font-display-lg text-primary mb-unit">Help us understand the maternal and child nutrition landscape in India</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-4">Your insights are vital. This survey takes less than 7 minutes.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-card-gap shadow-[0_8px_30px_rgba(50,0,117,0.04)] border border-outline-variant/10 w-full max-w-xl overflow-hidden relative">
+<div class="aspect-[16/9] w-full rounded-lg overflow-hidden mb-section-margin relative bg-surface-container-low">
+<img alt="Illustration of a mother and child" class="w-full h-full object-cover opacity-90 mix-blend-multiply" data-alt="A serene, soft-focus illustration of an Indian mother gently holding her young child in a brightly lit, modern clinical setting. The color palette emphasizes warm, empathetic tones mixed with the brand's deep purple and soft lavender accents. The lighting is natural and comforting, reflecting a modern, supportive maternal care environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8mrJBLUrT2DV52gR0weUg34ePGCGFjn90GKZjmlS2vaCIL2XB-Q-ZemvJBgbOlc_XPGJJzpizLvEZ79BbmYOPmuWToZI92N0Qvf149AVUv-UCBZNDHm22yF1Bh6jDpNBUmfkIByS7Bla-VN2TxHQZdlMoo76rFb0hsQlpT0aTajIISFfvGNB-_A2mQJwR2H0tbmGV4Uom0pKikUOy_yjWWNRnF497BwGXgTEKaImFtyEwkY14gqoEdgTS50NBieIOZHHss0OnLXrD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+</div>
+<div class="space-y-card-gap">
+<div class="flex items-start gap-4 p-4 rounded-lg border border-primary/10 bg-surface-bright">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">verified_user</span>
+<div>
+<h3 class="font-interactive text-interactive text-primary font-bold">Data Privacy Assured</h3>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm mt-1">All information collected is strictly confidential and anonymized for clinical research purposes only.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg border border-primary/10 bg-surface-bright">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">medical_services</span>
+<div>
+<h3 class="font-interactive text-interactive text-primary font-bold">Expert Clinical Care</h3>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm mt-1">Your responses directly contribute to advancing pediatric and maternal health protocols.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<div class="fixed bottom-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 gap-4 bg-surface/80 backdrop-blur-md border-t border-outline-variant/10 shadow-[0_-8px_30px_rgba(50,0,117,0.04)] md:hidden">
+<button class="flex items-center justify-center text-primary border border-primary/20 h-14 px-8 rounded-full flex-1 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined mr-2">chevron_left</span>
+<span class="text-interactive font-interactive">Back</span>
+</button>
+<button class="flex items-center justify-center bg-primary text-on-primary h-14 px-8 rounded-full shadow-md flex-1 hover:brightness-110 transition-all">
+<span class="text-interactive font-interactive">Start Survey</span>
+<span class="material-symbols-outlined ml-2">chevron_right</span>
+</button>
+</div>
+<!-- Desktop bottom actions -->
+<div class="hidden md:flex justify-end items-center px-container-padding py-4 gap-4 bg-surface/80 backdrop-blur-md border-t border-outline-variant/10 fixed bottom-0 w-full z-50 max-w-[720px] left-1/2 -translate-x-1/2 rounded-t-xl">
+<button class="flex items-center justify-center text-primary border border-primary/20 h-14 px-8 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="text-interactive font-interactive">Back</span>
+</button>
+<button class="flex items-center justify-center bg-primary text-on-primary h-14 px-8 rounded-full shadow-md hover:brightness-110 transition-all w-64">
+<span class="text-interactive font-interactive">Start Survey</span>
+<span class="material-symbols-outlined ml-2">chevron_right</span>
+</button>
+</div>
+</body></html>

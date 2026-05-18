@@ -1,0 +1,91 @@
+.border-glow-card {
+  --edge-proximity: 0;
+  --cursor-angle: 0deg;
+  --edge-sensitivity: 20; /* Start glow early for better feedback */
+  --border-radius: 28px;
+  --glow-padding: 50px;
+  --cone-spread: 30;
+
+  position: relative;
+  border-radius: var(--border-radius);
+  background: #ffffff; /* Explicit white background */
+  display: grid;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  isolation: isolate;
+}
+
+.border-glow-card:hover {
+  border-color: transparent; /* Hide static border on hover to show glow */
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+}
+
+/* The Animated Border Sweep */
+.border-glow-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px; /* Pull it out slightly */
+  border-radius: inherit;
+  padding: 2px; /* Border thickness */
+  background: conic-gradient(
+    from var(--cursor-angle) at center,
+    var(--glow-stop-one),
+    var(--glow-stop-two),
+    var(--glow-stop-three),
+    var(--glow-stop-two),
+    var(--glow-stop-one)
+  );
+  -webkit-mask:
+    conic-gradient(from var(--cursor-angle) at center, black 0%, transparent var(--cone-spread)%, transparent calc(100% - var(--cone-spread)%), black 100%) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    conic-gradient(from var(--cursor-angle) at center, black 0%, transparent var(--cone-spread)%, transparent calc(100% - var(--cone-spread)%), black 100%) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* The Outer Glow Aura */
+.border-glow-card::after {
+  content: "";
+  position: absolute;
+  inset: -30px;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--glow-color-40) 0%,
+    transparent 70%
+  );
+  /* Use the cursor angle and proximity to move/fade the glow */
+  opacity: 0;
+  filter: blur(20px);
+  z-index: -1;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.border-glow-card:hover::before {
+  opacity: 1;
+}
+
+.border-glow-card:hover::after {
+  opacity: 0.6;
+}
+
+.border-glow-inner {
+  position: relative;
+  z-index: 2;
+  border-radius: inherit;
+  background: #ffffff; /* Solid background to mask the aura */
+  height: 100%;
+  width: 100%;
+}
+
+.edge-light {
+  display: none; /* Simplified to use pseudo-elements for better control */
+}

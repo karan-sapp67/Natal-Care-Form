@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMPN Study - Tell us about yourself</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#d2bbff",
+                      "surface-container": "#e6eeff",
+                      "primary-container": "#4a1d96",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-primary-container": "#b794ff",
+                      "on-secondary-container": "#6a5a7e",
+                      "surface-tint": "#6d46bb",
+                      "tertiary-container": "#00453c",
+                      "secondary": "#67587b",
+                      "surface-container-low": "#eff4ff",
+                      "tertiary": "#002d27",
+                      "tertiary-fixed-dim": "#7ad7c6",
+                      "on-tertiary-fixed": "#00201b",
+                      "on-tertiary-fixed-variant": "#005046",
+                      "tertiary-fixed": "#96f3e1",
+                      "inverse-surface": "#27313f",
+                      "surface-bright": "#f8f9ff",
+                      "on-tertiary-container": "#59b7a6",
+                      "surface": "#f8f9ff",
+                      "primary": "#320075",
+                      "surface-dim": "#d0dbed",
+                      "on-primary-fixed-variant": "#552ba1",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-background": "#121c2a",
+                      "secondary-fixed-dim": "#d2bfe8",
+                      "surface-container-high": "#dee9fc",
+                      "on-surface": "#121c2a",
+                      "error": "#ba1a1a",
+                      "secondary-container": "#e9d5ff",
+                      "primary-fixed": "#eaddff",
+                      "on-secondary-fixed": "#221534",
+                      "outline-variant": "#ccc3d4",
+                      "secondary-fixed": "#eddcff",
+                      "on-secondary-fixed-variant": "#4f4062",
+                      "on-secondary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#25005a",
+                      "inverse-primary": "#d2bbff",
+                      "surface-container-highest": "#d9e3f6",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-variant": "#d9e3f6",
+                      "outline": "#7b7484",
+                      "background": "#f8f9ff",
+                      "on-surface-variant": "#4a4452"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-margin": "48px",
+                      "gutter": "16px",
+                      "card-gap": "20px",
+                      "container-padding": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "interactive": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "interactive": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Ambient shadows for selection cards */
+        .card-ambient-shadow {
+            box-shadow: 0 8px 30px rgba(50, 0, 117, 0.04);
+        }
+        
+        /* Transition for selection state */
+        .selection-card {
+            transition: all 0.2s ease-in-out;
+        }
+        
+        /* Active state for selection cards (simulated for demo purposes if needed, though usually handled via JS. We'll pre-style one for demonstration of the visual language) */
+        .selection-card.active {
+            border-color: #320075; /* primary */
+            border-width: 2px;
+            background-color: rgba(234, 221, 255, 0.3); /* simulated 5% lavender tint */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim docked full-width top-0 border-b border-outline-variant/10 dark:border-outline-variant/5 shadow-sm shadow-primary/5 flex justify-between items-center w-full px-gutter h-16 sticky z-40">
+<button aria-label="Go back" class="text-primary dark:text-primary-fixed-dim hover:bg-surface-container-high transition-colors p-2 rounded-full focus:outline-none">
+<span class="material-symbols-outlined text-headline-md font-headline-md">arrow_back</span>
+</button>
+<h1 class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">IMPN Study</h1>
+<button aria-label="Help" class="text-primary dark:text-primary-fixed-dim hover:bg-surface-container-high transition-colors p-2 rounded-full focus:outline-none">
+<span class="material-symbols-outlined text-headline-md font-headline-md">help</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow w-full max-w-[720px] mx-auto px-container-padding pt-8 pb-32">
+<!-- Progress Bar -->
+<div class="mb-section-margin w-full">
+<div class="flex justify-between items-center mb-2">
+<span class="text-label-caps font-label-caps text-on-surface-variant">Profile Setup</span>
+<span class="text-label-caps font-label-caps text-primary">20%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-[#59b7a6] h-1.5 rounded-full transition-all duration-500 ease-out" style="width: 20%"></div>
+</div>
+</div>
+<!-- Question Header -->
+<div class="mb-section-margin text-center">
+<h2 class="text-display-lg font-display-lg text-primary mb-4">Tell us about yourself</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg mx-auto">
+                Select the role that best describes you to help us personalize your clinical study experience.
+            </p>
+</div>
+<!-- Selection Cards (Bento Grid Style Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-card-gap">
+<!-- Option 1: Gynaecologist -->
+<button class="selection-card bg-surface-container-lowest border border-outline-variant/10 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-surface-bright focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 card-ambient-shadow group h-48">
+<div class="w-16 h-16 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-4 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 0;">stethoscope</span>
+</div>
+<span class="text-headline-md font-headline-md text-on-background">Gynaecologist</span>
+</button>
+<!-- Option 2: Pediatrician -->
+<button class="selection-card bg-surface-container-lowest border border-outline-variant/10 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-surface-bright focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 card-ambient-shadow group h-48">
+<div class="w-16 h-16 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-4 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 0;">child_care</span>
+</div>
+<span class="text-headline-md font-headline-md text-on-background">Pediatrician</span>
+</button>
+<!-- Option 3: Mother / Caregiver -->
+<button class="selection-card bg-surface-container-lowest border border-outline-variant/10 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-surface-bright focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 card-ambient-shadow group h-48">
+<div class="w-16 h-16 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-4 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 0;">pregnant_woman</span>
+</div>
+<span class="text-headline-md font-headline-md text-on-background">Mother / Caregiver</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only as per typical responsive design, though specs say docked full-width bottom-0. We'll render it to fulfill the JSON requirements) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 gap-4 bg-surface/80 backdrop-blur-md border-t border-outline-variant/10 shadow-[0_-8px_30px_rgba(50,0,117,0.04)] md:hidden">
+<!-- Back Button (Inactive styling) -->
+<button class="flex items-center justify-center text-primary dark:text-primary-fixed-dim border border-primary/20 h-14 px-8 rounded-full hover:bg-surface-container-high transition-colors focus:outline-none w-1/2">
+<span class="material-symbols-outlined mr-2">chevron_left</span>
+<span class="text-interactive font-interactive">Back</span>
+</button>
+<!-- Continue Button (Active styling) -->
+<button class="flex items-center justify-center bg-primary dark:bg-primary-fixed-dim text-on-primary dark:text-on-primary-fixed h-14 px-8 rounded-full shadow-md hover:brightness-110 transition-all active:scale-95 duration-150 focus:outline-none w-1/2">
+<span class="text-interactive font-interactive">Continue</span>
+<span class="material-symbols-outlined ml-2">chevron_right</span>
+</button>
+</nav>
+<!-- Desktop Navigation Actions (Rendered alongside the canvas for larger screens to replace BottomNavBar) -->
+<div class="hidden md:flex justify-between items-center w-full max-w-[720px] mx-auto px-container-padding pb-16">
+<button class="flex items-center justify-center text-primary dark:text-primary-fixed-dim border border-primary/20 h-14 px-8 rounded-full hover:bg-surface-container-high transition-colors focus:outline-none min-w-[140px]">
+<span class="material-symbols-outlined mr-2">chevron_left</span>
+<span class="text-interactive font-interactive">Back</span>
+</button>
+<button class="flex items-center justify-center bg-primary dark:bg-primary-fixed-dim text-on-primary dark:text-on-primary-fixed h-14 px-8 rounded-full shadow-md hover:brightness-110 transition-all active:scale-95 duration-150 focus:outline-none min-w-[140px]">
+<span class="text-interactive font-interactive">Continue</span>
+<span class="material-symbols-outlined ml-2">chevron_right</span>
+</button>
+</div>
+</body></html>

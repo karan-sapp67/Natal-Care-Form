@@ -1,0 +1,703 @@
+[2m1:16:58 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/components/LightPillar/LightPillar.jsx (resolved id: C:/Users/Appex/Desktop/NutraCare Suvery/src/components/LightPillar/LightPillar.jsx) in C:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx. Does the file exist?
+[2m2:14:25 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <div>. (705:4)
+
+[0m [90m 703 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 704 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 705 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m     |[31m     [31m[1m^[22m[31m
+ [90m 706 |[31m   )[33m;[31m
+ [90m 707 |[31m }
+ [90m 708 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:705:4
+[33m  703 |          </div>
+  704 |        </BorderGlow>
+  705 |      </motion.section>
+      |      ^
+  706 |    );
+  707 |  }[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+[2m2:17:30 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <motion.section>. (1314:4)
+
+[0m [90m 1312 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 1313 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 1314 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m      |[31m     [31m[1m^[22m[31m
+ [90m 1315 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m 1316 |[31m   )[33m;[31m
+ [90m 1317 |[31m }[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:1314:4
+[33m  1312 |          </div>
+  1313 |        </BorderGlow>
+  1314 |      </div>
+       |      ^
+  1315 |      </motion.section>
+  1316 |    );[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12629:25)
+[2m2:18:19 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <div>. (705:4)
+
+[0m [90m 703 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 704 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 705 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m     |[31m     [31m[1m^[22m[31m
+ [90m 706 |[31m   )[33m;[31m
+ [90m 707 |[31m }
+ [90m 708 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:705:4
+[33m  703 |          </div>
+  704 |        </BorderGlow>
+  705 |      </motion.section>
+      |      ^
+  706 |    );
+  707 |  }[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+[2m2:18:50 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <motion.section>. (1314:4)
+
+[0m [90m 1312 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 1313 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 1314 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m      |[31m     [31m[1m^[22m[31m
+ [90m 1315 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m 1316 |[31m   )[33m;[31m
+ [90m 1317 |[31m }[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:1314:4
+[33m  1312 |          </div>
+  1313 |        </BorderGlow>
+  1314 |      </div>
+       |      ^
+  1315 |      </motion.section>
+  1316 |    );[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12629:25)
+[2m2:19:47 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <div>. (705:4)
+
+[0m [90m 703 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 704 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 705 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m     |[31m     [31m[1m^[22m[31m
+ [90m 706 |[31m   )[33m;[31m
+ [90m 707 |[31m }
+ [90m 708 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:705:4
+[33m  703 |          </div>
+  704 |        </BorderGlow>
+  705 |      </motion.section>
+      |      ^
+  706 |    );
+  707 |  }[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+[2m2:21:57 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <motion.section>. (1314:6)
+
+[0m [90m 1312 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 1313 |[31m         [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 1314 |[31m       [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m      |[31m       [31m[1m^[22m[31m
+ [90m 1315 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m 1316 |[31m   )[33m;[31m
+ [90m 1317 |[31m }[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:1314:6
+[33m  1312 |          </div>
+  1313 |          </BorderGlow>
+  1314 |        </div>
+       |        ^
+  1315 |      </motion.section>
+  1316 |    );[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12629:25)
+[2m2:29:50 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <div>. (705:4)
+
+[0m [90m 703 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 704 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 705 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m     |[31m     [31m[1m^[22m[31m
+ [90m 706 |[31m   )[33m;[31m
+ [90m 707 |[31m }
+ [90m 708 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:705:4
+[33m  703 |          </div>
+  704 |        </BorderGlow>
+  705 |      </motion.section>
+      |      ^
+  706 |    );
+  707 |  }[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+[2m2:30:12 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <div>. (705:4)
+
+[0m [90m 703 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 704 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 705 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m     |[31m     [31m[1m^[22m[31m
+ [90m 706 |[31m   )[33m;[31m
+ [90m 707 |[31m }
+ [90m 708 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:705:4
+[33m  703 |          </div>
+  704 |        </BorderGlow>
+  705 |      </motion.section>
+      |      ^
+  706 |    );
+  707 |  }[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+[2m2:30:38 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <div>. (705:4)
+
+[0m [90m 703 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 704 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 705 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m     |[31m     [31m[1m^[22m[31m
+ [90m 706 |[31m   )[33m;[31m
+ [90m 707 |[31m }
+ [90m 708 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:705:4
+[33m  703 |          </div>
+  704 |        </BorderGlow>
+  705 |      </motion.section>
+      |      ^
+  706 |    );
+  707 |  }[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+[2m2:31:20 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Appex\Desktop\NutraCare Suvery\src\App.jsx: Expected corresponding JSX closing tag for <div>. (878:4)
+
+[0m [90m 876 |[31m         [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 877 |[31m       [33m<[31m[33m/[31m[33mBorderGlow[31m[33m>[31m
+[31m[1m>[22m[31m[90m 878 |[31m     [33m<[31m[33m/[31m[33mmotion[31m[33m.[31msection[33m>[31m
+ [90m     |[31m     [31m[1m^[22m[31m
+ [90m 879 |[31m   )[33m;[31m
+ [90m 880 |[31m }
+ [90m 881 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Appex/Desktop/NutraCare Suvery/src/App.jsx[39m:878:4
+[33m  876 |          </div>
+  877 |        </BorderGlow>
+  878 |      </motion.section>
+      |      ^
+  879 |    );
+  880 |  }[39m
+      at constructor (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:365:19)
+      at JSXParserMixin.raise (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11098:23)
+      at JSXParserMixin.parseUpdate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10916:61)
+      at JSXParserMixin.parseExprOps (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:39
+      at JSXParserMixin.allowInAnd (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12438:16)
+      at JSXParserMixin.parseExpression (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13159:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseBlock (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12103:10)
+      at C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12420:14)
+      at JSXParserMixin.parseFunction (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13461:10)
+      at JSXParserMixin.parseFunctionStatement (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13142:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12808:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseProgram (C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\@babel\parser\lib\index.js:12639:10)
+[2m6:42:52 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31merror while updating dependencies:
+Error: ENOENT: no such file or directory, open 'C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\ogl\src\index.js'
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1287:14)
+    at async extractExportsData (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32290:23)
+    at async file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32097:23
+    at async Promise.all (index 9)
+    at async prepareEsbuildOptimizerRun (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32095:2)[39m
+[2m6:43:11 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31merror while updating dependencies:
+Error: ENOENT: no such file or directory, open 'C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\ogl\src\index.js'
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1287:14)
+    at async extractExportsData (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32290:23)
+    at async file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32097:23
+    at async Promise.all (index 9)
+    at async prepareEsbuildOptimizerRun (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32095:2)[39m
+[2m6:50:11 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31merror while updating dependencies:
+Error: ENOENT: no such file or directory, open 'C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\ogl\src\index.js'
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1287:14)
+    at async extractExportsData (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32290:23)
+    at async file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32097:23
+    at async Promise.all (index 9)
+    at async prepareEsbuildOptimizerRun (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32095:2)[39m
+[2m6:50:28 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31merror while updating dependencies:
+Error: ENOENT: no such file or directory, open 'C:\Users\Appex\Desktop\NutraCare Suvery\node_modules\ogl\src\index.js'
+    at async open (node:internal/fs/promises:640:25)
+    at async Object.readFile (node:internal/fs/promises:1287:14)
+    at async extractExportsData (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32290:23)
+    at async file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32097:23
+    at async Promise.all (index 9)
+    at async prepareEsbuildOptimizerRun (file:///C:/Users/Appex/Desktop/NutraCare%20Suvery/node_modules/vite/dist/node/chunks/config.js:32095:2)[39m
