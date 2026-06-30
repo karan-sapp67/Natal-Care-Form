@@ -1,16 +1,17 @@
-import { initializeApp } from "firebase/app";
+import { getApps, initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBQrMgwOmagPLXeL1rz_2BL6PtX-hb9QO0",
-  authDomain: "valencia-survey.firebaseapp.com",
-  projectId: "valencia-survey",
-  storageBucket: "valencia-survey.firebasestorage.app",
-  messagingSenderId: "98227149184",
-  appId: "1:98227149184:web:3c7d532c4044075ef84965"
+  apiKey: "AIzaSyCk-4TCKO8Hx4V-fOmPUxpbRoilZrmIHiI",
+  authDomain: "natalcare-survey.firebaseapp.com",
+  projectId: "natalcare-survey",
+  storageBucket: "natalcare-survey.firebasestorage.app",
+  messagingSenderId: "302180681697",
+  appId: "1:302180681697:web:bc2da7e585d644956fb4a0"
 };
 
-const app = initializeApp(firebaseConfig);
+const appName = firebaseConfig.projectId;
+const app = getApps().find((firebaseApp) => firebaseApp.name === appName) || initializeApp(firebaseConfig, appName);
 export const auth = getAuth(app);
 export const db = getFirestore(app);

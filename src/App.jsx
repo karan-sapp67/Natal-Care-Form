@@ -11,7 +11,8 @@ import {
   languageOptions,
   normalizeLanguage
 } from "./data/i18n.js";
-import { db } from "./firebase";
+import { auth, db } from "./firebase";
+import { onAuthStateChanged, signInAnonymously } from "firebase/auth";
 import { collection, doc, getDocs, query, serverTimestamp, setDoc, where } from "firebase/firestore";
 
 const iconAliases = {
@@ -170,6 +171,33 @@ function slugifyDocPart(value, fallback = "unknown") {
   return slug || fallback;
 }
 
+function createSubmissionDocSuffix(timestamp) {
+  const compactTimestamp = String(timestamp || new Date().toISOString())
+    .replace(/\D/g, "")
+    .slice(0, 17);
+  const randomPart = Math.random().toString(36).slice(2, 8);
+
+  return [compactTimestamp, randomPart].filter(Boolean).join("_");
+}
+
+async function ensureAnonymousSession() {
+  if (auth.currentUser) return auth.currentUser;
+  const credential = await signInAnonymously(auth);
+  return credential.user;
+}
+
+function getSaveErrorMessage(error, copy) {
+  if (error?.code === "auth/admin-restricted-operation") {
+    return "Firebase Anonymous sign-in is disabled for this project. Enable it in Firebase Authentication, then try again.";
+  }
+
+  if (error?.code === "permission-denied") {
+    return "Firestore rules are blocking this save. Allow authenticated users to create survey submissions, then try again.";
+  }
+
+  return copy.survey.saveError;
+}
+
 function getTimestampMillis(submission) {
   const timestamp = submission?.completedAt || submission?.createdAt || submission?.completedAtLocal;
   if (timestamp?.toMillis) return timestamp.toMillis();
@@ -186,6 +214,8 @@ function pickLatestSubmission(submissions) {
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [authReady, setAuthReady] = useState(false);
+  const [authUser, setAuthUser] = useState(() => auth.currentUser);
   const [language, setLanguage] = useState(() =>
     normalizeLanguage(localStorage.getItem(LANGUAGE_STORAGE_KEY) || DEFAULT_LANGUAGE)
   );
@@ -218,10 +248,44 @@ function App() {
     }
   });
   const [showError, setShowError] = useState(false);
+  const [passwordInput, setPasswordInput] = useState("");
+  const [passwordError, setPasswordError] = useState(false);
   const [authError, setAuthError] = useState("");
   const [showLogoutDialog, setShowLogoutDialog] = useState(false);
   const [showRestartDialog, setShowRestartDialog] = useState(false);
   const [isAutoScrolling, setIsAutoScrolling] = useState(false);
+
+  useEffect(() => {
+    let isActive = true;
+
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (!isActive) return;
+
+      if (user) {
+        setAuthUser(user);
+        setAuthReady(true);
+        return;
+      }
+
+      ensureAnonymousSession()
+        .then((signedInUser) => {
+          if (!isActive) return;
+          setAuthUser(signedInUser);
+          setAuthReady(true);
+        })
+        .catch((error) => {
+          console.error("Error signing in anonymously:", error);
+          if (!isActive) return;
+          setAuthUser(null);
+          setAuthReady(true);
+        });
+    });
+
+    return () => {
+      isActive = false;
+      unsubscribe();
+    };
+  }, []);
 
   useEffect(() => {
     const normalizedLanguage = normalizeLanguage(language);
@@ -231,10 +295,13 @@ function App() {
 
   useEffect(() => {
     const fetchExistingSubmission = async () => {
-      if (userProfile?.name && userProfile?.mobile) {
+      if (!authReady) return;
+
+      if (userProfile?.name && userProfile?.mobile && auth.currentUser) {
         try {
           const q = query(
             collection(db, "survey_submissions"),
+            where("authUid", "==", auth.currentUser.uid),
             where("userName", "==", userProfile.name),
             where("userMobile", "==", userProfile.mobile)
           );
@@ -251,6 +318,7 @@ function App() {
           }
         } catch (error) {
           console.error("Error fetching submission:", error);
+          setUserSubmission(null);
         }
       } else {
         setUserSubmission(null);
@@ -259,7 +327,7 @@ function App() {
     };
 
     fetchExistingSubmission();
-  }, [userProfile]);
+  }, [authReady, userProfile]);
 
   useEffect(() => {
     localStorage.setItem("survey_phase", phase);
@@ -353,6 +421,8 @@ function App() {
   };
 
   const saveSurveySubmission = async (submittedAnswers, route = {}) => {
+    const signedInUser = await ensureAnonymousSession();
+    const authUid = signedInUser.uid;
     const userName = userProfile?.name || "User";
     const userMobile = userProfile?.mobile || "";
     const userPincode = userProfile?.pincode || "";
@@ -402,11 +472,13 @@ function App() {
     const docName = [
       slugifyDocPart(userName, "user"),
       slugifyDocPart(userMobile, "mobile"),
-      slugifyDocPart(role, "survey")
+      slugifyDocPart(role, "survey"),
+      createSubmissionDocSuffix(completedAtLocal)
     ].join("_");
 
     const surveyData = {
       submissionTitle: `${userName} - ${branchLabel}`,
+      authUid,
       userName,
       userMobile,
       userPincode,
@@ -440,6 +512,7 @@ function App() {
         branch: role,
         surveyName: branchLabel,
         documentId: docName,
+        authUid,
         language,
         languageLabel: languageMeta.label
       }
@@ -447,7 +520,7 @@ function App() {
 
     await setDoc(doc(db, "survey_submissions", docName), surveyData);
 
-    const userDocId = `${slugifyDocPart(userName)}_${slugifyDocPart(userMobile)}`;
+    const userDocId = authUid;
     await setDoc(
       doc(db, "users", userDocId),
       {
@@ -484,9 +557,22 @@ function App() {
     setDirection(1);
 
     if (phase === "role") {
-      setRole(currentAnswer);
+      const selectedRole = currentAnswer;
+      setRole(selectedRole);
       setStep(0);
-      setPhase("survey");
+
+      if (selectedRole === "gynaecologist" || selectedRole === "pediatrician") {
+        setPhase("password");
+        setPasswordInput("");
+        setPasswordError(false);
+      } else {
+        setPhase("survey");
+      }
+      return;
+    }
+
+    if (phase === "password") {
+      verifyPassword();
       return;
     }
 
@@ -509,7 +595,7 @@ function App() {
           setPhase("thanks");
         } catch (error) {
           console.error("Error saving survey:", error);
-          alert(copy.survey.saveError);
+          alert(getSaveErrorMessage(error, copy));
         }
         return;
       }
@@ -523,9 +609,19 @@ function App() {
           setPhase("thanks");
         } catch (error) {
           console.error("Error saving survey:", error);
-          alert(copy.survey.saveError);
+          alert(getSaveErrorMessage(error, copy));
         }
       }
+    }
+  };
+
+  const verifyPassword = () => {
+    if (passwordInput === "Valencia@304") {
+      setDirection(1);
+      setPhase("survey");
+      setPasswordError(false);
+    } else {
+      setPasswordError(true);
     }
   };
 
@@ -541,6 +637,12 @@ function App() {
 
     // If on Profile, do nothing
     if (phase === "profile") {
+      return;
+    }
+
+    // From password screen, go back to role selection
+    if (phase === "password") {
+      setPhase("role");
       return;
     }
 
@@ -684,6 +786,21 @@ function App() {
             </div>
           )}
 
+          {phase === "password" && (
+            <PasswordScreen
+              key="password-gate"
+              direction={direction}
+              value={passwordInput}
+              onChange={(val) => {
+                setPasswordInput(val);
+                setPasswordError(false);
+              }}
+              error={passwordError}
+              onVerify={verifyPassword}
+              copy={copy}
+            />
+          )}
+
           {phase === "thanks" && (
             <ThankYou
               key="thanks"
@@ -731,9 +848,9 @@ function App() {
       {phase !== "landing" && phase !== "thanks" && phase !== "profile" && (
         <ActionBar
           onBack={handleBack}
-          onContinue={handleContinue}
+          onContinue={phase === "password" ? verifyPassword : handleContinue}
           onRestart={() => setShowRestartDialog(true)}
-          continueLabel={isSubmitStep ? copy.action.submit : copy.action.continue}
+          continueLabel={isSubmitStep ? copy.action.submit : (phase === "password" ? copy.password.button : copy.action.continue)}
           progress={progress}
           copy={copy}
         />
@@ -1784,7 +1901,92 @@ function ConfirmDialog({ title, message, confirmLabel, cancelLabel, onConfirm, o
         </BorderGlow>
       </motion.div>
     </div>
-);
+  );
+}
+
+function PasswordScreen({ direction, value, onChange, error, onVerify, copy }) {
+  return (
+    <motion.section
+      custom={direction}
+      variants={cardVariants}
+      initial="enter"
+      animate="center"
+      exit="exit"
+      transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+      className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center py-12"
+    >
+      <BorderGlow
+        borderRadius={32}
+        backgroundColor="white"
+        glowColor="262 83 58"
+        colors={["#6B46C1", "#8B5CF6", "#D6BCFA"]}
+        edgeSensitivity={20}
+        glowRadius={30}
+      >
+        <div className="p-8">
+          <div className="mb-8 text-center">
+            <div className="mx-auto mb-4 grid h-16 w-16 place-items-center rounded-2xl bg-surface-tint text-primary">
+              <Icon name="key" className="h-8 w-8" />
+            </div>
+            <h1 className="font-display text-2xl font-extrabold text-ink">{copy.password.title}</h1>
+            <p className="mt-2 text-sm text-muted">{copy.password.subtitle}</p>
+          </div>
+
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              onVerify();
+            }}
+            className="space-y-4"
+          >
+            <AnimatePresence mode="wait">
+              {error && (
+                <motion.div
+                  key="password-error"
+                  initial={{ opacity: 0, height: 0, marginBottom: 0 }}
+                  animate={{ opacity: 1, height: "auto", marginBottom: 16 }}
+                  exit={{ opacity: 0, height: 0, marginBottom: 0 }}
+                  className="flex items-center gap-2 overflow-hidden rounded-xl border border-red-200 bg-red-50 p-3 text-sm font-semibold text-red-600"
+                >
+                  <Icon name="shieldAlert" className="h-4 w-4 shrink-0" />
+                  <span>{copy.password.error}</span>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            <div>
+              <label className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-muted">
+                {copy.password.placeholder}
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 flex items-center pl-4 text-muted">
+                  <Icon name="lock" className="h-5 w-5" />
+                </div>
+                <input
+                  type="password"
+                  required
+                  value={value}
+                  onChange={(e) => onChange(e.target.value)}
+                  placeholder="••••••••"
+                  className="h-14 w-full rounded-xl border border-outline bg-lavender-soft/30 pl-11 pr-4 text-sm font-semibold outline-none transition focus:border-primary focus:bg-surface-card focus:ring-4 focus:ring-lavender"
+                  autoFocus
+                />
+              </div>
+            </div>
+
+            <motion.button
+              whileHover={{ y: -1 }}
+              whileTap={{ scale: 0.98 }}
+              type="submit"
+              className="h-14 w-full rounded-xl bg-primary font-bold text-white shadow-press transition hover:bg-primary-deep"
+            >
+              {copy.password.button}
+            </motion.button>
+          </form>
+        </div>
+      </BorderGlow>
+    </motion.section>
+  );
 }
 
 export default App;

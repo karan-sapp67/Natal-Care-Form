@@ -42,6 +42,13 @@ const en = {
       age: "Please enter a valid age (18-100)."
     }
   },
+  password: {
+    title: "Access Protected",
+    subtitle: "This section is reserved for healthcare professionals. Please enter your access password to continue.",
+    placeholder: "Enter password",
+    button: "Verify Access",
+    error: "Invalid password. Please try again."
+  },
   landing: {
     badge: "Confidential clinical research",
     titlePrefix: "The Indian Maternal &",
@@ -193,6 +200,13 @@ const hi = {
       age: "कृपया मान्य आयु दर्ज करें (18-100)."
     }
   },
+  password: {
+    title: "पहुंच सुरक्षित",
+    subtitle: "यह अनुभाग स्वास्थ्य सेवा पेशेवरों के लिए आरक्षित है। जारी रखने के लिए कृपया अपना एक्सेस पासवर्ड दर्ज करें।",
+    placeholder: "पासवर्ड दर्ज करें",
+    button: "पहुंच सत्यापित करें",
+    error: "अमान्य पासवर्ड। कृपया पुन: प्रयास करें।"
+  },
   landing: {
     badge: "गोपनीय क्लिनिकल शोध",
     titlePrefix: "भारतीय मातृ और",
@@ -343,6 +357,13 @@ const mr = {
       age: "कृपया वैध वय भरा (18-100)."
     }
   },
+  password: {
+    title: "प्रवेश सुरक्षित",
+    subtitle: "हा विभाग आरोग्य सेवा व्यावसायिकांसाठी राखीव आहे. सुरू ठेवण्यासाठी कृपया आपला प्रवेश पासवर्ड प्रविष्ट करा।",
+    placeholder: "पासवर्ड प्रविष्ट करा",
+    button: "प्रवेश सत्यापित करा",
+    error: "अवैध पासवर्ड. कृपया पुन्हा प्रयत्न करा."
+  },
   landing: {
     badge: "गोपनीय क्लिनिकल संशोधन",
     titlePrefix: "भारतीय मातृ आणि",
@@ -492,6 +513,13 @@ const gu = {
       pincode: "કૃપા કરીને માન્ય 6 અંકનો પિનકોડ દાખલ કરો.",
       age: "કૃપા કરીને માન્ય ઉંમર દાખલ કરો (18-100)."
     }
+  },
+  password: {
+    title: "એક્સેસ સુરક્ષિત",
+    subtitle: "આ વિભાગ આરોગ્ય સંભાળ વ્યવસાયિકો માટે આરક્ષિત છે. ચાલુ રાખવા માટે કૃપા કરીને તમારો એક્સેસ પાસવર્ડ દાખલ કરો.",
+    placeholder: "પાસવર્ડ દાખલ કરો",
+    button: "એક્સેસ ચકાસો",
+    error: "અમાન્ય પાસવર્ડ. કૃપા કરીને ફરી પ્રયાસ કરો."
   },
   landing: {
     badge: "ગોપનીય ક્લિનિકલ સંશોધન",
